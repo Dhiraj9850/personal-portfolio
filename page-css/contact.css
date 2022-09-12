@@ -1,0 +1,99 @@
+.contact-form{
+   /* padding: 0px 52px; */
+   font-family: 'Poppins', sans-serif;
+   margin: 24px auto;
+   
+}
+.contact-form h2{
+    text-align: center;
+    /* color: rgb(42, 40, 40); */
+    color: rgb(22, 107, 107);
+    font-family: 'Open Sans', sans-serif;
+  
+}
+.inner-form{
+    border: 1px solid rgb(179, 176, 176);
+    border-radius: 6px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    width: 45%;
+    margin: 25px auto;
+    padding: 20px;
+}
+.inner-form button{
+   display: block;
+   margin: auto;
+   cursor: pointer;
+}
+.email-div .help{
+    margin-top: 3px;
+    font-weight: 600;
+    font-size: 15px;
+    color: rgb(115, 114, 114);
+}
+.name-div label,
+.email-div label,
+.phone-div label,
+.enquiry-div label{
+    font-weight: bold;
+    color: rgb(39, 38, 38);
+    margin-bottom: 3px;
+}
+
+.name-div input,
+.email-div input,
+.phone-div input{
+    padding: 8px;
+    outline: none;
+    border: 1px solid  #c6c4c4;
+    border-radius: 4px;
+    font-size: 16px;
+    background-color:  #f2f2f2;
+}
+.enquiry-div textarea{
+    outline: none;
+    border: 1px solid #c6c4c4;
+    border-radius: 4px;
+    resize: none;
+    background-color:  #f2f2f2;
+}
+.name-div,.email-div,.phone-div,.enquiry-div{
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+}
+.inner-form button{
+  padding: 7px;
+  border-radius: 5px;
+  display: block;
+  margin-top: 20px;
+  cursor: pointer;
+  color: white;
+  background-image: linear-gradient(to right,rgb(19, 84, 95),rgb(55, 146, 162));
+  border: 1px solid rgb(38, 118, 132);
+  /* margin: 0 3px; */
+  width: 96%;
+  font-weight: bold;
+}
+.inner-form button:hover{
+    background-image: linear-gradient(rgb(46, 108, 119), rgb(57, 124, 136));
+}
+
+@media(max-width:700px){
+    .inner-form{
+        width: 20rem;
+        margin-right: 12rem;
+    }
+    .contact-form h2{
+        margin-right: 12rem;
+    }
+}
+@media(max-width:450px){
+    .inner-form{
+        width: 16rem;
+        margin-left: -3rem;
+        
+    }
+    .contact-form h2{
+        margin-right: 5rem;
+    }
+}

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dhiraj_protfolio-contact</title>
+  <link rel="shortcut icon" href="./img/portfolio.png" class="favicon" type="image/x-icon">
+  <link rel="stylesheet" href="../style.css">
+  <link rel="stylesheet" href="../page-css/contact.css">
+  <script src="https://kit.fontawesome.com/1c9005996e.js" crossorigin="anonymous"></script>
+ 
+</head>
+
+<body>
+  <div class="container">
+    <div class="sidebar sidebarIn">
+      <nav>
+        <ul>
+          <li><a href="/">Home</a></li>
+          <li><a href="/pages/about.html">About me</a></li>
+          <li><a href="/pages/blog.html">Blog</a></li>
+          <li><a href="/pages/contact.html">Contact me</a></li>
+        </ul>
+      </nav>
+    </div>
+
+    <div class="main">
+      <div class="hamburger">
+        <i class="fas fa-bars"></i>
+        <i class="fas fa-times"></i>
+      </div>
+      <div class="contact-form">
+        <h2>Contact me for Work/General Enquiries</h2>
+       
+        <div class="inner-form">
+          <div class="name-div">
+            <label for="exampleInputEmail1" class="form-name">Name</label>
+            <input type="text" class="full-name" name="name" id="fullname" aria-describedby="emailHelp" required="true">
+
+          </div>
+          <div class="email-div">
+            <label for="exampleInputEmail1" class="form-email">Email id</label>
+            <input type="email" class="email" name="email" id="email_id" aria-describedby="emailHelp" required>
+            <div class="help">We'll never share your email & phone with anyone else.</div>
+          </div>
+          <div class="phone-div">
+            <label for="exampleInputEmail1" class="form-phone">Subject(For message)</label>
+            <input type="text" class="phone" name="subject" id="subject" aria-describedby="emailHelp" required>
+
+          </div>
+          <div class="enquiry-div">
+            <label for="exampleInputEmail1" class="form-enquiry">Message</label>
+            <textarea name="enquiry" name="message" id="message" cols="30" rows="7" required></textarea>
+
+          </div>
+
+          <button class="btn btn-primary" onclick="sendMail()">Submit</button>
+        </div>
+      
+
+      </div>
+    </div>
+  </div>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="../js/sidebar.js"></script>
+  <script src="../js/contactform.js"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+
+  </script>
+  <script type="text/javascript">
+    (function () {
+      emailjs.init("rf3uQ8grW2nBYF9B_");
+    })();
+  </script>
+
+<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+
+</body>
+
+</html>

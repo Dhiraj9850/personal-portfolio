@@ -1,0 +1,313 @@
+.about-container{
+    /* border: 1px solid green; */
+    width: 97%;
+    /* margin: auto; */
+    margin-left: 1rem;
+    height: auto;
+}
+.sidebar{
+    position: absolute;
+    /* position: -webkit-sticky;
+    position: sticky;
+    top: 0; */
+}
+
+.about-container h1{
+    color: rgb(22, 107, 107);
+    font-family: 'Open Sans', sans-serif;
+    padding: 10px;
+    font-size: 1.8rem;
+}
+.about-container h2{
+    color: rgb(42, 40, 40);
+    font-family: 'Open Sans', sans-serif;
+    padding: 10px;
+    font-size: 1.4rem;
+}
+.info-line{
+    font-size: 1rem;
+    padding: 5px;
+    font-family: 'Roboto Condensed', sans-serif;
+  }
+.info-line span a{
+    color: rgb(5, 48, 48);
+    font-weight: 600;
+}
+.about-info{
+    /* width:98%; */
+    /* margin:7px auto; */
+    margin-bottom: 9px;
+}
+.skill-container{
+    /* border: 1px solid green; */
+    width: 50%;
+    border: 1px solid #c6c4c4;
+    background-color:  #f2f2f2;
+    border-radius: 10px;
+    margin-left: 20px;
+}
+.skill-name{
+    width: 110px;
+    font-weight: 600;
+    color: rgb(88, 85, 85);
+    font-family: 'Roboto Condensed', sans-serif;
+}
+.skill{
+    display: flex;
+    flex-direction: row;
+    margin-left: 12px;
+    padding: 5px;
+    align-items: center;
+}
+.line{
+    width: 270px;
+    height: 6.5px;
+    background-color: red;
+    border-end-end-radius: 12px;
+    border-top-right-radius: 12px;
+}
+.hundred{
+    width: 270px;
+    background-color:rgb(1, 18, 28);
+    animation: line-strech1 3s 1 forwards;
+   
+}
+@keyframes line-strech1{
+    from{width: 0px;}
+    to{width: 270px;}
+}
+.ninety{
+   width: 260px;
+   background-color: rgb(14, 57, 82);
+   animation: line-strech2 3s 1 forwards;
+}
+@keyframes line-strech2{
+    from{width: 0px;}
+    to{width: 260px;}
+}
+.seventy-five{
+    width: 230px;
+    background-color: rgb(83, 144, 179);
+    animation: line-strech3 3s 1 forwards;
+}
+@keyframes line-strech3{
+    from{width: 0px;}
+    to{width: 230px;}
+}
+.eighty{
+    width: 245px;
+    background-color: rgb(34, 89, 123);
+    animation: line-strech4 3s 1 forwards;
+}
+@keyframes line-strech4{
+    from{width: 0px;}
+    to{width: 245px;}
+}
+.sixty{
+    width: 210px;
+    background-color: rgb(132, 194, 231);
+    animation: line-strech5 3s 1 forwards;
+}
+@keyframes line-strech5{
+    from{width: 0px;}
+    to{width: 210px;}
+}
+.skill-section{
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 30px;
+}
+.skill-section img{
+  
+    height: 240px;
+    width: 250px;
+    margin-left: 80px;
+}
+.content{
+    border: 1px solid rgb(111, 199, 199);
+    background-color: rgb(206, 227, 221);
+}
+.questions{
+    /* margin-top: 6px;
+    margin-bottom: 6px; */
+    margin: 6px 0px 25px;
+}
+.accordian{
+    width: 95%;
+    margin: auto;
+}
+.label{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.label p{
+    padding: 13px;
+    display: flex;
+    font-size: 1.1rem;
+    justify-content: flex-start;
+}
+.down-icon i{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+.accordian .question-box{
+    position: relative;
+    padding: 10px 0px 0px 10px;
+}
+.accordian .question-box .label{
+    position: relative;
+    background:linear-gradient(to right ,rgb(20, 89, 89),rgb(46, 146, 146)); 
+    color: white;
+    cursor: pointer;
+}
+.accordian .question-box .label ::before{
+    position: absolute;
+    right: 15px;
+    bottom: 20%;
+    transform: translateY(-10%);
+    font-size: 1.2em;
+}
+.accordian .question-box .content{
+   position: relative;
+   /* padding: 3px; */
+   height: 0;
+   overflow: hidden;
+   transition: 0.1s;
+   overflow-y: auto;
+}
+.accordian .question-box .content{
+   position: relative;
+   /* padding: 3px; */
+   height: 0;
+   overflow: hidden;
+   transition: 0.5s;
+   overflow-y: auto;
+}
+.accordian .question-box.active .content{
+    height: auto;
+    padding: 3px;
+}
+.social{
+    padding: 5px;
+}
+.icons{
+    width: 90%;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 50%;
+    margin-bottom: 12px;
+}
+
+.linkdin,.phone,.telegram,.whatsapp{
+    padding: 10px;
+    margin: 10px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+.linkdin a , .gmail a{
+    margin-left: 20px;
+}
+.phone p{
+    margin-left: 20px;
+}
+
+.linkdin i{
+font-size: 2.1rem;
+color:rgb(42, 85, 166);
+}
+.phone i{
+    margin-left: 7px;
+}
+.telegram i{
+    font-size: 2.1rem;
+    margin-left: 7px;
+    color: rgb(68, 126, 126);
+}
+.whatsapp i{
+    font-size: 2.1rem;
+    margin-left: 7px;
+    color: rgb(64, 230, 64);
+}
+.gmail{
+    display: flex;
+    align-items: center;
+}
+.phone i{
+    font-size: 1.5rem;
+    color: rgb(75, 79, 79);
+}
+.gmail img{
+    height: 1.4rem;
+    cursor: pointer;
+    padding: 10px;
+    margin-top: 4px;
+}
+#iconhover:hover{
+   transform: scale(1.1);
+   transition: transform 0.2s ease-in-out;
+}
+
+
+@media(max-width:1086px){
+    .coder-img{
+        display: none;
+    }
+}
+@media(max-width:1049px){
+    .skill-container{
+        margin-left: 8rem;
+        width: 440px;
+    }
+}
+@media(max-width:445px){
+    .about-container{
+        margin-left: -5rem;
+    }
+    .skill-container{
+        margin-left: -2rem;
+        width: 347px;
+    }
+    .skill .line{
+        width: 80px;
+        height: 0.4rem;
+    }
+    @keyframes line-strech1{
+        from{width: 0px;}
+        to{width: 180px;}
+    }
+    @keyframes line-strech2{
+        from{width: 0px;}
+        to{width: 170px;}
+    }
+    @keyframes line-strech3{
+        from{width: 0px;}
+        to{width: 140px;}
+    }
+    @keyframes line-strech4{
+        from{width: 0px;}
+        to{width: 155px;}
+    }
+    @keyframes line-strech5{
+        from{width: 0px;}
+        to{width: 100px;}
+    }
+    .skill-name{
+        font-size: 0.7rem;
+    }
+    .skill{
+        margin-left: 3px;
+    }
+    .about-container h2{
+        text-align: center;
+    }
+    .accordian{
+        width: 21.8rem;
+        margin-left: -1.956rem;
+    }
+}
+    

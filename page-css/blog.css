@@ -1,0 +1,239 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap');
+
+.blog-container{
+    /* border: 1px solid green; */
+    width: 97%;
+    margin-left: 1rem;
+    height: 320vh;
+    /* height: auto; */
+}
+.blog-container h1{
+    color: rgb(22, 107, 107);
+    font-family: 'Open Sans', sans-serif;
+    padding: 15px;
+}
+.blog-container h2{
+    color: rgb(42, 40, 40);
+    font-family: 'Open Sans', sans-serif;
+    padding: 15px;
+}
+.blog-container h2{
+    font-size: 1.55rem;
+}
+.blog{
+    width: 100%;
+    display: flex;
+    /* border: 1px solid red; */
+}
+
+.info-line{
+  font-size: 1.1rem;
+  padding: 5px;
+  font-family: 'Roboto Condensed', sans-serif;
+}
+.blog-info{
+    width: 70%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.code-pic{
+    width: 33%;
+    margin-left: 10px;
+    margin-top: 20px;
+  
+}
+.code-pic img{
+    height: 240px;
+    width: 290px;
+    border: 1px solid rgb(221, 218, 218);
+    border-radius: 20px;
+   
+}
+.blog-item{
+    border: 1px solid #c6c4c4;
+    background-color:  #f2f2f2;
+    width: 90%;
+    margin: 10px auto;
+    padding: 10px;
+    border-radius: 20px;
+}
+.blog-item .project{
+    width: 90%;
+    margin: 1px solid blue;
+}
+.sidebar{
+   position: absolute;
+}
+.react-projects,.Backend-projects{
+    display: flex;
+    flex-direction: row;
+}
+.react-projects i{
+    margin-top: 7px;
+    font-size: 50px;
+    color: rgb(23, 179, 179);
+    animation: rotatelogo 30s;
+}
+@keyframes rotatelogo{
+    from{transform: rotate(0deg);}
+    to{transform: rotate(360deg);}
+}
+.project-name{
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
+    color: rgb(42, 40, 40);
+    font-size: 1.3rem;
+    padding: 5px;
+}
+
+.blog-item i{
+    font-size: 30px;
+}
+.github-icon{
+    display: flex;
+    flex-direction: row;
+    border: 1px solid rgb(182, 149, 213);
+    background: linear-gradient(rgb(58, 22, 92),rgb(159, 105, 210));
+    padding: 2px;
+    width: 10%;
+    border-radius: 15px;
+    cursor: pointer;
+   
+}
+.github{
+    display: flex;
+    flex-direction: row;
+    /* border: 1px solid green; */
+    align-items: center;
+    margin-left: 12px;
+}
+.github-icon i{
+    font-size: 30px;
+    color: white;
+}
+.github-icon h4{
+   display: flex;
+   align-items: center;
+   margin-left: 7px;
+   font-family: 'Roboto Condensed', sans-serif;
+   color: white;
+}
+.github-link{
+    display: flex;
+    flex-direction: row;
+}
+
+.github-link a{
+    margin:2px 16px;
+    font-size: 17px;
+    color: rgb(22, 93, 93);
+}
+.netlify{
+    display: flex;
+    flex-direction: row;
+}
+.netlify-link{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.netlify-link a{
+    margin: 2px 16px;
+    font-size: 17px;
+    color: rgb(22, 93, 93);
+}
+.netlify img{
+    height: 4rem;
+    width: 100px;
+}
+.Backend-projects{
+    display: flex;
+    flex-direction: column;
+}
+
+.node-pro,.php-pro{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    /* border: 1px solid red; */
+}
+.node-pro h3,.php-pro h3{
+    margin-left: 3rem;
+    font-size: 1.3rem;
+    font-family: 'Open Sans', sans-serif;
+    color: rgb(42, 40, 40);
+}
+.node-pro i{
+    font-size: 45px;
+    margin: 0px 10px;
+    color: rgb(47, 209, 47);    
+}
+.php-pro i{
+    font-size: 50px;
+    margin: 0px 10px;
+    color: rgb(70, 99, 128);
+}
+@media(max-width:875px){
+    .blog-container{
+        margin-left: -4rem;
+    }
+    .github-icon h4{
+        display: none;
+    }
+}
+@media(max-width:780px){
+   .code-pic img{
+    height: 170px;
+    width: 210px;
+    margin-left: 1rem;
+   }
+  
+   .github-icon h4{
+    display: none;
+    
+}
+}
+@media(max-width:382px){
+    .blog-container{
+        margin-left: -4.8rem;
+    }
+    .code-pic img{
+        height: 150px;
+        width: 180px;
+        margin-left: -0.4rem;
+       }
+    .react-projects i{
+        margin-top: 34px;
+        animation: none;
+    }
+    .blog-item{
+        width: 22.9rem;
+        margin-left: -1.7rem;
+    }
+    .github-icon h4{
+        display: none;
+    }
+    .github-link h3{
+        margin-top: 5px;
+        display: flex;
+        align-items: center;
+    }
+}
+@media(max-width:415px){
+    .blog-container{
+        margin-left: -4.8rem;
+    }
+    .blog-item{
+        width: 24rem;
+        margin-left: -0.99rem;
+    }
+    .react-projects i{
+        margin-top: 34px;
+        animation: none;
+    }
+    .code-pic img{
+        height: 150px;
+        width: 180px;
+        margin-left: -0.7rem;
+       }
+}

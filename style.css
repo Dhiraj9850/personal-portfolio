@@ -1,0 +1,268 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Bhai+2:wght@400;500;600&family=Baloo+Bhaijaan+2:wght@400;700&family=Dancing+Script&family=Fira+Sans:ital,wght@0,100;1,100&family=Irish+Grover&family=Kanit:wght@300&family=Lato:ital,wght@0,100;1,300;1,400&family=Libre+Baskerville:wght@700&family=Lobster&family=Lora:ital,wght@1,600&family=Merriweather:ital,wght@1,400;1,700&family=Murecho:wght@300&family=Oleo+Script+Swash+Caps:wght@700&family=Open+Sans:ital,wght@0,400;1,800&family=Oswald:wght@200&family=PT+Sans&family=PT+Serif:ital,wght@1,700&family=Raleway:ital,wght@1,500&family=Roboto+Slab:wght@800&family=Roboto:ital,wght@1,300&family=Rubik:wght@300&family=Shippori+Antique&family=Taviraj:wght@600&family=Ubuntu:ital,wght@0,300;1,500&family=Yanone+Kaffeesatz&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@1,300&family=Poppins:wght@300&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;600&display=swap');
+*{
+    margin: 0;
+}
+.sidebar{
+    position: absolute;
+    background-image: linear-gradient(rgb(2, 35, 35),rgb(15, 74, 74));
+    font-family: 'Open Sans', sans-serif;
+    height: 100vh;
+    transition: transform 0.8s ease-in;
+}
+.sidebarIn{
+    position: absolute;
+    transform: translate(-270px,0px);
+}
+.sidebar nav{
+    padding: 30px;
+} 
+.sidebar nav li{
+    list-style: none;
+    font-size: 18px;
+    padding: 15px;
+    /* border: 1px solid white; */
+    width: 140px;
+    margin: 12px auto;
+}
+
+.sidebar nav li a{
+    text-decoration: none;
+    color: white;
+    margin-left: 13px;
+}
+.sidebar nav li a:hover{
+    color: #cfcbcb;
+    transition: 0.3s ease-in;
+}
+.main{
+    /* background-color: aqua; */
+    width: 83vw;
+    margin-left: 8rem;
+}
+.container{
+    display: flex;
+    flex-direction: row;
+}
+.info-container{
+    /* background-color: green; */
+    height: 57vh;
+    width: 75vw;
+    margin: 65px auto;
+    display: flex;
+    justify-content: space-around;
+}
+.dev-info{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+ 
+}
+.hello{
+    font-size: 2.3rem;
+    font-family: 'Poppins', sans-serif;
+}
+.name{
+   font-size: 1.6rem;
+   font-weight: 600;
+   font-family: 'Open Sans', sans-serif;
+   color: rgb(69, 66, 66);
+   margin-left: 2rem;
+}
+.wrapper{
+    font-family: 'Raleway', sans-serif;
+    display: flex;
+    margin: 7px 20px;
+}
+
+.static-text{
+   font-size: 24px;
+   color: rgb(81, 79, 79);
+   font-weight: 700;
+   margin-left: 1rem;
+   margin-top: 2px;
+}
+.wrapper .dynamic-texts{
+    margin-left: -2rem;
+    line-height: 36px;
+    /* background-color: aqua; */
+    height: 36px;
+    overflow: hidden;
+}
+.dynamic-texts li{
+    list-style: none;
+    color: rgb(25, 92, 92);
+    font-weight: 600;
+    font-size: 24px;
+    top: 0;
+    position: relative;
+    animation: slider 12s steps(4) infinite;
+}
+@keyframes slider{
+    100%{
+        top: -144px;
+    }
+}
+.dynamic-texts li{
+    position: relative;
+}
+.dynamic-texts li::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: white;
+    border-left: 2px solid  rgb(25, 92, 92);
+    animation: typing 3s steps(18) infinite;
+}
+@keyframes typing{
+    40%,
+    60%{
+        left: calc(100% + 3px);
+    }
+    100%{
+       left: 0;
+    }
+}
+.buttons{
+    margin-top: 20px;
+}
+.buttons button{
+  border-radius: 20px;
+  cursor: pointer;
+}
+.buttons .cv-btn{
+    background-image: linear-gradient(to right,rgb(19, 84, 95),rgb(55, 146, 162));
+    padding: 9px;
+    margin: 0 3px;
+    font-weight: bold;
+    color: white;
+    border: 1px solid rgb(52, 126, 126);
+    box-shadow: 0px 8px 15px rgba(70, 168, 172, 0.1);
+   
+}
+.cv-btn:hover{
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+    background-image:linear-gradient(white,white);
+    color: rgb(54, 53, 53);
+    transition: all 0.7s ease;
+}
+.buttons .contact-btn{
+    background-color: white;
+    color: rgb(41, 40, 40);
+    margin: 0 3px;
+    font-weight: bold;
+    padding: 10.2px;
+    border: 1px solid rgb(182, 187, 187);
+    width: 7.5rem;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+}
+.buttons .contact-btn:hover{
+    color: black;
+    background-color: rgb(234, 230, 230);
+    font-weight: bold;
+    transition: all 0.3s ease-in;
+}
+.favicon{
+    background-color: aliceblue;
+    color: black;
+}
+button i{
+    margin-left: 5px;
+}
+.dev-pic img{
+    height: 57vh;
+}
+.more-about{
+    margin-top: 30px;
+    padding: 10px;
+    border:1px solid #cfcbcb; 
+    background-color: #f2f2f2;
+    border-radius: 10px;
+}
+.more-about .line-1{
+   font-size: 18px;   
+   color: rgb(69, 66, 66);
+   font-family: 'Open Sans', sans-serif;
+}
+.line-2{
+    font-size: 18px;
+    margin-top: 5px;
+    font-weight: 600;
+    color:rgb(69, 66, 66);
+    font-family: 'Open Sans', sans-serif;
+}
+.hamburger {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    cursor: pointer;
+}
+
+.hamburger .fa-bars{
+    font-size: 1.7rem;
+    color: rgb(11, 72, 72);
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 40px;
+  
+}
+.hamburger .fa-bars:hover{
+    background-color: #e5dede;
+    border: 1px solid #cac8c8;
+}
+.hamburger .fa-times{
+    font-size: 1.4rem;
+    color: rgb(18, 91, 109);
+    cursor: pointer;
+    margin-left: 223px;
+    padding-left: 4px;
+    padding-right: 4px;
+    border-radius: 40px;
+}
+.hamburger .fa-times:hover{
+    border: 1px solid rgb(54, 139, 156);
+}
+
+@media(max-width:1160px){
+   
+   /* .sidebar{
+     transform: translate(-470px,0px);
+     position: absolute;
+   } */
+   .dev-pic{
+    display: none;
+   }
+}
+@media(max-width:641px){
+    .info-container{
+        margin-left: -3rem;
+    }
+}
+@media(max-width:450px){
+    .info-container{
+        margin-top: 5rem;
+    }
+    .more-about{
+        width: 25rem;
+        margin-left: -2rem;
+      
+    }
+}
+@media(max-width:390px){
+    .more-about{
+        width: 23.9rem;
+        margin-left: -3rem;
+      
+    }
+    .more-about .line-1{
+        font-size: 15px;
+    }
+    .more-about .line-2{
+        font-size: 15px;
+    }
+}
